@@ -1,0 +1,42 @@
+additionalProperties:
+  formFields:
+    - default: "https://your-subscription-url.com/config"
+      envKey: SUB_URL
+      labelEn: Subscription URL
+      labelZh: 订阅链接
+      required: true
+      type: text
+    - default: "0 */6 * * *"
+      envKey: SUB_CRON
+      labelEn: Update Cron
+      labelZh: 订阅更新周期 (Cron表达式)
+      required: true
+      type: text
+    - default: "mihomo"
+      envKey: CONTAINER_NAME
+      labelEn: Container Name
+      labelZh: 容器名称
+      required: true
+      rule: paramCommon
+      type: text
+    - default: "9090"
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Dashboard Port
+      labelZh: 面板端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "7890"
+      envKey: MIXED_PORT
+      labelEn: Proxy Port (Mixed)
+      labelZh: 代理端口 (混合)
+      required: true
+      rule: paramPort
+      type: number
+    - default: "your-secure-password"
+      envKey: SECRET
+      labelEn: Dashboard Password
+      labelZh: 面板密码
+      required: true
+      rule: paramComplexity
+      type: password
