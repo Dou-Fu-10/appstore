@@ -1,0 +1,17 @@
+networks:
+    1panel-network:
+        external: true
+        
+services:
+  metatube:
+    container_name: ${CONTAINER_NAME}
+    image: ghcr.io/metatube-community/metatube-server:1.4.0
+    networks:
+      - 1panel-network
+    ports:
+      - ${PORT_HTTP}:8080
+    environment:
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTPS_PROXY}
+    restart: unless-stopped
+    command: -dsn "postgres://${META_DB_USER}:${META_DB_PASS}@${META_DB_HOST}:${META_DB_PORT}/${META_DB_NAME}" -port 8080 -db-auto-migrate -db-prepared-stmt

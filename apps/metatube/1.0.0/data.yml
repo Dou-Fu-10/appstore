@@ -1,0 +1,71 @@
+additionalProperties:
+  formFields:
+    - default: metatube
+      envKey: CONTAINER_NAME
+      labelEn: Container Name
+      labelZh: 容器名称
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: 8080
+      envKey: PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: ""
+      envKey: HTTP_PROXY
+      labelEn: HTTP Proxy (Optional)
+      labelZh: HTTP 代理地址（可选）
+      required: false
+      type: text
+
+    - default: ""
+      envKey: HTTPS_PROXY
+      labelEn: HTTPS Proxy (Optional)
+      labelZh: HTTPS 代理地址（可选）
+      required: false
+      type: text
+
+    - default: metatube
+      envKey: META_DB_USER
+      labelEn: Database User
+      labelZh: 数据库用户名
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: metatube
+      envKey: META_DB_PASS
+      labelEn: Database Password
+      labelZh: 数据库密码
+      required: true
+      rule: paramComplexity
+      type: password
+
+    - default: postgres
+      envKey: META_DB_HOST
+      labelEn: Database Host
+      labelZh: 数据库主机地址
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: "5432"
+      envKey: META_DB_PORT
+      labelEn: Database Port
+      labelZh: 数据库端口
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: metatube
+      envKey: META_DB_NAME
+      labelEn: Database Name
+      labelZh: 数据库名称
+      required: true
+      rule: paramCommon
+      type: text

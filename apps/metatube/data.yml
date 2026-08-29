@@ -1,0 +1,14 @@
+additionalProperties:
+  key: metatube
+  name: MetaTube
+  tags:
+    - Media
+    - Tool
+  shortDescZh: MetaTube 是一款元数据刮削器，可从多个源（如 JavDB、Aviation、FANZA 等）刮削影视元数据
+  shortDescEn: MetaTube is a metadata scraper that scrapes from multiple sources
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  website: https://metatube.xyz/
+  github: https://github.com/metatube-community/metatube-server
+  document: https://metatube.xyz/docs/
