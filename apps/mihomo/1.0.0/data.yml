@@ -19,7 +19,7 @@ additionalProperties:
       required: true
       rule: paramCommon
       type: text
-    - default: "9090"
+    - default: "9097"
       envKey: PANEL_APP_PORT_HTTP
       labelEn: Dashboard Port
       labelZh: 面板端口
