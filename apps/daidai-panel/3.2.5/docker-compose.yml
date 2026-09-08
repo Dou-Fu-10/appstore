@@ -1,0 +1,21 @@
+services:
+  daidai-panel:
+    image: linzixuanzz/daidai-panel:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:5700"
+    volumes:
+      - ./data:/app/Dumb-Panel
+    environment:
+      - TZ=Asia/Shanghai
+      - CONTAINER_NAME=${CONTAINER_NAME}
+      - PANEL_UPDATE_MANAGER=
+    labels:  
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+
+networks:
+  1panel-network:
+    external: true

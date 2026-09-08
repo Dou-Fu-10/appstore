@@ -1,0 +1,11 @@
+additionalProperties:
+    key: daidai-panel
+    name: Daidai‑Panel呆呆面板
+    tags:
+        - Tool
+        - Script
+        - Task
+    type: tool
+    title: 呆呆面板｜脚本定时任务管理面板
+    description: 呆呆面板，一款轻量脚本定时任务管理面板，支持shell/python/node脚本、定时执行、消息推送、git订阅同步
+    recommend: "false"

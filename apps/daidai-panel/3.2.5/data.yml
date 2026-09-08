@@ -1,0 +1,25 @@
+additionalProperties:
+  formFields:
+    - name: PANEL_APP_PORT_HTTP
+      label:
+        en: Web UI Port
+        zh: 面板端口
+        ja: Web UIポート
+        ko: 웹 UI 포트
+      type: number
+      default: 5700
+      required: true
+      description:
+        en: The port to access the panel web interface
+        zh: 访问面板Web界面的端口
+
+    - name: CONTAINER_NAME
+      label:
+        en: Container Name
+        zh: 容器名称
+      type: text
+      default: daidai-panel
+      required: false
+      description:
+        en: Docker container name
+        zh: Docker容器名称
