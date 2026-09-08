@@ -1,14 +1,35 @@
+name: Daidai‑Panel
+tags:
+    - 实用工具
+    - 定时任务
+title: 轻量脚本定时任务管理面板
+description: 轻量脚本定时任务管理面板，支持shell/python/node脚本、定时执行、消息推送、git订阅同步
 additionalProperties:
-  key: daidai-panel
-  name: Daidai‑Panel呆呆面板
-  tags:
-    - Tool
-    - Script
-    - Task
-  type: tool
-  title:
-    en: Daidai‑Panel
-    zh: 呆呆面板｜脚本定时任务管理面板
-  description:
-    en: Lightweight scheduled task panel for shell/python/node scripts
-    zh: 呆呆面板，一款轻量脚本定时任务管理面板，支持shell/python/node脚本、定时执行、消息推送、git订阅同步
+    key: daidai-panel
+    name: Daidai‑Panel
+    tags:
+      - Tool
+      - Script
+      - Task
+    shortDescZh: 轻量脚本定时任务管理面板
+    shortDescEn: Lightweight scheduled task management panel
+    description:
+        en: Lightweight scheduled task panel for shell/python/node scripts
+        es-es: Panel ligero de tareas programadas para scripts shell/python/node
+        fa: 'پنل وظیفه زمان‌بندی سبک برای اسکریپت‌های shell/python/node'
+        ja: Shell/Python/Nodeスクリプト用軽量スケジュールタスクパネル
+        ms: Panel tugas jadual ringan untuk skrip shell/python/node
+        pt-br: Painel leve de tarefas agendadas para scripts shell/python/node
+        ru: Легкая панель планировщика задач для скриптов shell/python/node
+        ko: Shell/Python/Node 스크립트용 경량 예약 작업 패널
+        zh-Hant: 輕量指令稿排程管理面板，支援shell/python/node指令稿
+        zh: 轻量脚本定时任务管理面板，支持shell/python/node脚本、定时执行、消息推送、git订阅同步
+        tr: Kabuk/python/node betikleri için hafif zamanlanmış görev paneli
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    batchInstallSupport: true
+    website: ""
+    github: ""
+    document: ""
