@@ -1,6 +1,6 @@
 services:
   daidai-panel:
-    image: linzixuanzz/daidai-panel:latest
+    image: linzixuanzz/daidai-panel:3.2.5-debian3.10
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
